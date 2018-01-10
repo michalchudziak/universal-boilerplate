@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "haul"
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "web": "node web/scripts/start.js",
+    "haul": "haul start"
   },
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -51,8 +54,7 @@
   },
   "babel": {
     "presets": [
-      "react-native",
-      "react-app"
+      "react-native"
     ]
   },
   "eslintConfig": {
